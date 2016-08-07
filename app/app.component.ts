@@ -25,18 +25,18 @@ export class AppComponent {
 	msgTwo: string;
 	msgBroadcast: string;
 
-	constructor(private cmq: SimpleMQ) { }
+	constructor(private smq: SimpleMQ) { }
 
 	sendToOne() {
 		// Publish to queue name 'one'
-		this.cmq.publish('one', this.msgOne);
+		this.smq.publish('one', this.msgOne);
 	}
 	sendToTwo() {
 		// Publish to queue name 'two'
-		this.cmq.publish('two', this.msgTwo);
+		this.smq.publish('two', this.msgTwo);
 	}
 	broadcast() {
 		// Publish to queue name 'broadcast'
-		this.cmq.publish('broadcast', this.msgBroadcast);
+		this.smq.publish('broadcast', this.msgBroadcast);
 	}
 }

@@ -12,10 +12,10 @@ export class OneComponent implements OnInit {
 	title = 'Component One';
 	msg;
 	broadcastMsg;
-	constructor(private cmq: SimpleMQ) { }
+	constructor(private smq: SimpleMQ) { }
 	ngOnInit() {
-		this.cmq.subscribe('one', e => this.receiveMsg(e));
-		this.cmq.subscribe('broadcast', e => this.receiveBroadcast(e));
+		this.smq.subscribe('one', e => this.receiveMsg(e));
+		this.smq.subscribe('broadcast', e => this.receiveBroadcast(e));
 	}
 
 	receiveMsg(m) {
