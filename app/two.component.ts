@@ -5,7 +5,7 @@ import {SimpleMQ} from 'ng2-simple-mq';
 	'selector': 'two-component',
 	'template': `
 		<h3>{{title}}</h3>
-		<div>Send message to component two <input [(ngModel)]="msgTwo"><button (click)="sendToOne()">Send</button></div>
+		<div>Send message to component one <input [(ngModel)]="msgOne"><button (click)="sendToOne()">Send</button></div>
 		<div>Broadcast message <input [(ngModel)]="msgBroadcast"><button (click)="broadcast()">Broadcast</button></div>
 		<div>Receive from queue 'two' : {{msg}}</div>
 		<div>Receive from queue 'broadcast' : {{broadcastMsg}}</div>`
@@ -22,8 +22,8 @@ export class TwoComponent implements OnInit {
 		this.smq.subscribe('broadcast', e => this.receiveBroadcast(e));
 	}
 	sendToOne() {
-		// Publish to queue name 'two'
-		this.smq.publish('two', this.msgOne);
+		// Publish to queue name 'one'
+		this.smq.publish('one', this.msgOne);
 	}
 	broadcast() {
 		// Publish to queue name 'broadcast'
