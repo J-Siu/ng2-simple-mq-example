@@ -19,10 +19,7 @@
 		'compiler',
 		'core',
 		'platform-browser',
-		'platform-browser-dynamic',
-		'router',
-		'router-deprecated',
-		'upgrade',
+		'platform-browser-dynamic'
 	];
 	// Individual files (~300 requests):
 	function packIndex(pkgName) {
