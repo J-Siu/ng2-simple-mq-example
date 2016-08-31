@@ -24,6 +24,7 @@ npm start
 ## Changelog
 
 * 0.1.5 - Initial upload
+* 0.1.6 - Migrate to Angular RC5
 
 
 ## License

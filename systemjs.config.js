@@ -20,6 +20,7 @@
 		'common',
 		'compiler',
 		'core',
+		'forms',
 		'platform-browser',
 		'platform-browser-dynamic'
 	];

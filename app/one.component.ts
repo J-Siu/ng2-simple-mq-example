@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, Input} from '@angular/core';
 import {SimpleMQ} from 'ng2-simple-mq';
 
 @Component({
@@ -16,10 +16,13 @@ export class OneComponent implements OnInit {
 	msgTwo;
 	msgBroadcast;
 	broadcastMsg;
+
+	@Input() parent;
+
 	constructor(private smq: SimpleMQ) { }
 	ngOnInit() {
 		this.smq.subscribe('one', e => this.receiveMsg(e));
-		this.smq.subscribe('broadcast', e => this.receiveBroadcast(e));
+		this.smq.subscribe(this.parent, e => this.receiveBroadcast(e));
 	}
 	sendToTwo() {
 		// Publish to queue name 'two'
@@ -27,7 +30,7 @@ export class OneComponent implements OnInit {
 	}
 	broadcast() {
 		// Publish to queue name 'broadcast'
-		this.smq.publish('broadcast', this.msgBroadcast);
+		this.smq.publish(this.parent, this.msgBroadcast);
 	}
 	receiveMsg(m) {
 		this.msg = m;

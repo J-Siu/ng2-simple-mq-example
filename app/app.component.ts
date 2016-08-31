@@ -11,8 +11,8 @@ import {TwoComponent} from './two.component';
 		<div>Send message to component one <input [(ngModel)]="msgOne"><button (click)="sendToOne()">Send</button></div>
 		<div>Send message to component two <input [(ngModel)]="msgTwo"><button (click)="sendToTwo()">Send</button></div>
 		<div>Broadcast message <input [(ngModel)]="msgBroadcast"><button (click)="broadcast()">Broadcast</button></div>
-		<one-component></one-component>
-		<two-component></two-component>
+		<one-component [parent]="myId"></one-component>
+		<two-component [parent]="myId"></two-component>
 		`,
 	'providers': [SimpleMQ],
 	'directives': [
@@ -24,6 +24,8 @@ export class AppComponent {
 	msgOne: string;
 	msgTwo: string;
 	msgBroadcast: string;
+  
+	myId = require('node-uuid').v1();
 
 	constructor(private smq: SimpleMQ) { }
 
@@ -37,6 +39,6 @@ export class AppComponent {
 	}
 	broadcast() {
 		// Publish to queue name 'broadcast'
-		this.smq.publish('broadcast', this.msgBroadcast);
+		this.smq.publish(this.myId, this.msgBroadcast);
 	}
 }
