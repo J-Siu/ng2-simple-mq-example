@@ -1,8 +1,6 @@
 import {Component} from '@angular/core';
 import {SimpleMQ} from 'ng2-simple-mq';
 
-import {OneComponent} from './one.component';
-import {TwoComponent} from './two.component';
 
 @Component({
 	'selector': 'app-component',
@@ -13,18 +11,14 @@ import {TwoComponent} from './two.component';
 		<div>Broadcast message <input [(ngModel)]="msgBroadcast"><button (click)="broadcast()">Broadcast</button></div>
 		<one-component [parent]="myId"></one-component>
 		<two-component [parent]="myId"></two-component>
-		`,
-	'providers': [SimpleMQ],
-	'directives': [
-		OneComponent,
-		TwoComponent]
+		`
 })
 export class AppComponent {
 	title = 'Angular2 Simple Component MQ Example';
 	msgOne: string;
 	msgTwo: string;
 	msgBroadcast: string;
-  
+
 	myId = require('node-uuid').v1();
 
 	constructor(private smq: SimpleMQ) { }

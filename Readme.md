@@ -1,6 +1,6 @@
 # ng2-simple-mq-example
 
-This is example for [ng2-simple-mq](https://github.com/J-Siu/ng2-simple-mq), a simple message queue for Angular 2 inter-component communication. (This pacakge does not communicate with RabbitMQ or any other message queue software/service.) 
+This is example for [ng2-simple-mq](https://github.com/J-Siu/ng2-simple-mq), a simple message queue for Angular 2 inter-component communication. (This pacakge does not communicate with RabbitMQ or any other message queue software/service.)
 
 ## Index
 
@@ -24,8 +24,8 @@ npm start
 ## Changelog
 
 * 0.1.5 - Initial upload
-* 0.1.6 - Migrate to Angular RC5
-
+* 0.1.6 - Migrate to Angular 2-RC5
+* 1.2.4 - Migrate to Angular 2.0.0
 
 ## License
 
