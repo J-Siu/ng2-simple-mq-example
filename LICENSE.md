@@ -1,42 +1,4 @@
-# ng2-simple-mq-example
-
-This is example for [ng2-simple-mq](https://github.com/J-Siu/ng2-simple-mq), a simple message queue for Angular 2 inter-component communication. (This pacakge does not communicate with RabbitMQ or any other message queue software/service.)
-
-## Index
-
-* [Usage](#Usage)
-* [Plunker](#Plunker)
-* [Changelog](#Changelog)
-* [License](#License)
-
-## Usage
-
-```
-npm install
-npm start
-```
-## Plunker
-
-[Plunker](http://embed.plnkr.co/e8Crbf/)
-
-## Contributors
-
-* [John Sing Dao Siu](https://github.com/J-Siu)
-
-## Changelog
-
-* 0.1.5 - Initial upload
-* 0.1.6 - Migrate to Angular2 2-RC5
-* 1.2.4 - Migrate to Angular2 2.0.0
-* 1.2.5 - Add Plunker example
-* 1.2.6
-	- Migrate to Angular2 ~2.4.0
-	- Replace node-uuid with angular2-uuid
-	- tsconfig.json set `"noImplicitAny": false`
-
-## License
-
-The MIT License
+MIT License
 
 Copyright (c) 2017
 

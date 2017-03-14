@@ -1,6 +1,6 @@
-import {Component} from '@angular/core';
-import {SimpleMQ} from 'ng2-simple-mq';
-
+import { Component } from '@angular/core';
+import { SimpleMQ } from 'ng2-simple-mq';
+import { UUID } from 'angular2-uuid';
 
 @Component({
 	'selector': 'app-component',
@@ -19,7 +19,7 @@ export class AppComponent {
 	msgTwo: string;
 	msgBroadcast: string;
 
-	myId = require('node-uuid').v1();
+	myId = UUID.UUID();
 
 	constructor(private smq: SimpleMQ) { }
 

@@ -6,8 +6,8 @@ import { SimpleMQ } from 'ng2-simple-mq';
 
 import { AppComponent } from './app.component';
 
-import {OneComponent} from './one.component';
-import {TwoComponent} from './two.component';
+import { OneComponent } from './one.component';
+import { TwoComponent } from './two.component';
 
 @NgModule({
 	imports: [
