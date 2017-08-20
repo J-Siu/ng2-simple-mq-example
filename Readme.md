@@ -33,6 +33,10 @@ npm start
 	- Migrate to Angular2 ~2.4.0
 	- Replace node-uuid with angular2-uuid
 	- tsconfig.json set `"noImplicitAny": false`
+* 1.2.8
+	- Migrate to Angular 4.3.1
+	- Use ng2-simple-mq 1.2.8, which support Angular 4.3.1
+	- Version jump to match ng2-simple-mq version
 
 ## License
 

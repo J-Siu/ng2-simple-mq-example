@@ -1,7 +1,7 @@
 {
   "name": "simple-mq-example",
   "description": "Angular 2 simple message queue example",
-  "version": "1.2.6",
+  "version": "1.2.8",
   "scripts": {
     "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
     "lite": "lite-server",
@@ -33,22 +33,24 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@angular/common": "~2.4.0",
-    "@angular/compiler": "~2.4.0",
-    "@angular/core": "~2.4.0",
-    "@angular/forms": "~2.4.0",
-    "@angular/platform-browser": "~2.4.0",
-    "@angular/platform-browser-dynamic": "~2.4.0",
-    "systemjs": "0.19.40",
+    "@angular/common": "~4.3.1",
+    "@angular/compiler": "~4.3.1",
+    "@angular/core": "~4.3.1",
+    "@angular/forms": "~4.3.0",
+    "@angular/http": "~4.3.1",
+    "@angular/platform-browser": "~4.3.1",
+    "@angular/platform-browser-dynamic": "~4.3.1",
     "core-js": "^2.4.1",
-    "rxjs": "5.0.1",
-    "zone.js": "^0.7.4",
-    "angular2-uuid": "*",
-    "ng2-simple-mq": "1.2.6"
+    "ng2-simple-mq": "1.2.8",
+    "rxjs": "^5.1.0",
+    "systemjs": "0.19.39",
+    "zone.js": "^0.8.4"
   },
   "devDependencies": {
-    "typescript": "*",
-    "concurrently": "^2.0.0",
-    "lite-server": "^2.2.2"
+    "@types/angular": "^1.5.16",
+    "@types/node": "^6.0.45",
+    "concurrently": "^3.0.0",
+    "lite-server": "*",
+    "typescript": "~2.3.2"
   }
 }
