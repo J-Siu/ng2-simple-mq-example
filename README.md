@@ -1,29 +1,33 @@
-# ng2-simple-mq-example
+# Angular Simple MQ Example [![Paypal donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/donate/?business=HZF49NM9D35SJ&no_recurring=0&currency_code=CAD)
 
-This is example for [ng2-simple-mq](https://github.com/J-Siu/ng2-simple-mq), a simple message queue for Angular 2 inter-component communication. (This pacakge does not communicate with RabbitMQ or any other message queue software/service.)
+This is example for [ng2-simple-mq](https://github.com/J-Siu/ng2-simple-mq), a simple message queue for Angular 2 inter-component communication. (This package does not communicate with RabbitMQ or any other message queue software/service.)
 
-## Index
+### Table Of Content
+<!-- TOC -->
 
-* [Usage](#Usage)
-* [Plunker](#Plunker)
-* [Changelog](#Changelog)
-* [License](#License)
+- [Usage](#usage)
+- [Plunker](#plunker)
+- [Contributors](#contributors)
+- [Changelog](#changelog)
+- [License](#license)
 
-## Usage
+<!-- /TOC -->
+
+### Usage
 
 ```
 npm install
 npm start
 ```
-## Plunker
+### Plunker
 
 [Plunker](http://embed.plnkr.co/e8Crbf/)
 
-## Contributors
+### Contributors
 
 * [John Sing Dao Siu](https://github.com/J-Siu)
 
-## Changelog
+### Changelog
 
 * 0.1.5 - Initial upload
 * 0.1.6 - Migrate to Angular2 2-RC5
@@ -38,7 +42,7 @@ npm start
 	- Use ng2-simple-mq 1.2.8, which support Angular 4.3.1
 	- Version jump to match ng2-simple-mq version
 
-## License
+### License
 
 The MIT License
 
